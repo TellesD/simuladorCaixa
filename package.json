@@ -1,0 +1,14 @@
+{
+  "name": "caixa",
+  "version": "1.0.0",
+  "description": "Simulador caixa eletronico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Matheus Teles da Silva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
