@@ -43,17 +43,14 @@ router.get('/saqueLimitado/:valor', (req, res) => {
   valor = valor / 10;
   cedulas.cem = (valor / 10) | 0;
   valor = valor % 10;
-  
+
   if (cedulas.cem > 2) {
     extra = cedulas.cem - 2;
     cedulas.cem = 2;
     valor = valor + extra * 10
   }
-  console.log(valor)
-
 
   cedulas.cinquenta = (valor / 5) | 0;
-
   valor = valor % 5;
 
   if (cedulas.cinquenta > 3) {
@@ -61,12 +58,11 @@ router.get('/saqueLimitado/:valor', (req, res) => {
     cedulas.cinquenta = 3;
     valor = valor + extra * 5
   }
-  console.log(valor)
 
   cedulas.vinte = (valor / 2) | 0;
   valor = valor % 2;
   cedulas.dez = valor;
-  
+
   if (cedulas.vinte > 4) {
     extra = cedulas.vinte - 4;
     cedulas.vinte = 4;
